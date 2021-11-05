@@ -1,0 +1,126 @@
+===>a HTML file that loads external javascript file
+            --> The javascript must show the current date and time in the alert
+<html>
+<head>
+    <title>Document</title>
+    <script>alert('header alert');</script>
+</head>
+<body>
+    <script src="../html exercises/ext/external.js"></script>
+    <script>alert('body alert');</script>
+    <h1>todays date and time on alert
+        
+    </h1>
+    <script>
+    const d=new Date();
+    alert(d);
+    </script>
+</body>
+</html>
+
+
+===>a HTML and javascript to differentiate new Boolean and assignment of boolean value 
+        Hint: var temp = new Boolean(true);
+        var temp1 = true; 
+    //valueOf method of boolean object 
+<html>
+<body>
+
+<h2>JavaScript Booleans</h2>
+<p>differentiating new boolean ard assignment of boolean value:</p>
+<script>
+var x = true;    // x is a boolean
+var y = new Boolean(false);   // y is an object
+if(y){
+       alert('test ===> '+ y.valueOf())
+     }
+</script>
+</body>
+
+
+===>a HTML and Javascript program to show the difference between let and var keywords in variable declaration. 
+    a) Must use internal javascript
+<html>
+<body>
+<h2>scope of var</h2>
+<h2>scope is var is not confined to a particular block</h2>
+<script>
+var y=5;
+{
+    
+    var  x = 10;
+    alert('sum of x and y is '+(x+y));
+}
+alert('value of x is '+x);
+alert('value of y is '+y);
+</script>
+<script>
+    alert('x='+x +' and y='+y);
+</script>
+
+</body>
+
+
+<html>
+<body>
+<h2>scope of let</h2>
+<h2>scope is var is confined to a particular block</h2>
+<script>
+let y=5;
+{
+    let x = 10;
+    alert('sum of x and y is '+(x+y));
+    //alert('value of y is '+y);
+}
+alert('value of x is '+x);
+alert('value of y is '+y);
+</script>
+<script>
+    let z=6;
+    alert('value of z is '+z);
+    alert('x='+x +' and y='+y);
+</script>
+
+</body>
+</html>
+
+
+===> a HTML and Javascript program to change the content of a div tag when you click on the button 
+    Note: The javascript must load from the external file. 
+    Hint: a) Use onClick event 
+    b) Use innerHTML method 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.myDiv {
+  border: 5px outset rgb(85, 168, 216);
+  background-color: rgb(243, 243, 78);    
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<button onclick="myFunction()">Click here to change content</button>
+<h3></h3>
+<div class="myDiv">
+  <h1>This is a heading in a div element</h1>
+  <h3 id="demo"></h3>
+
+  <h3>A function is triggered when the button is clicked. The function    outputs some text in a p element with id="demo".</h3>
+
+  </div>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello this is newly added line";
+}
+</script>
+
+</body>
+</html>
+
+</html>
+</html>
