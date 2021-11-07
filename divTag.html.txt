@@ -1,0 +1,35 @@
+===>Write a HTML and Javascript program to change the content of a div tag when you click on the button 
+    Note: The javascript must load from the external file. 
+    Hint: a) Use onClick event 
+    b) Use innerHTML method
+
+<html>
+<head>
+<style>
+.myDiv {
+  border: 5px outset rgb(85, 168, 216);
+  background-color: rgb(243, 243, 78);    
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<button onclick="myFunction()">Click here to change content</button>
+<h3></h3>
+<div class="myDiv">
+  <h1>This is a heading in a div element</h1>
+  <h3 id="demo"></h3>
+
+  <h3>A function is triggered when the button is clicked. The function    outputs some text in a p element with id="demo".</h3>
+
+  </div>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello this is newly added line";
+}
+</script>
+
+</body>
+</html>

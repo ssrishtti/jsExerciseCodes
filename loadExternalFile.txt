@@ -1,0 +1,19 @@
+===>a HTML file that loads external javascript file
+            --> The javascript must show the current date and time in the alert
+<html>
+<head>
+    <title>Document</title>
+    <script>alert('header alert');</script>
+</head>
+<body>
+    <script src="../html exercises/ext/external.js"></script>
+    <script>alert('body alert');</script>
+    <h1>todays date and time on alert
+        
+    </h1>
+    <script>
+    const d=new Date();
+    alert(d);
+    </script>
+</body>
+</html>

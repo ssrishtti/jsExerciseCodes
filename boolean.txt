@@ -1,0 +1,17 @@
+===>a HTML and javascript to differentiate new Boolean and assignment of boolean value 
+        Hint: var temp = new Boolean(true);
+        var temp1 = true; 
+    //valueOf method of boolean object 
+<html>
+<body>
+
+<h2>JavaScript Booleans</h2>
+<p>differentiating new boolean ard assignment of boolean value:</p>
+<script>
+var x = true;    // x is a boolean
+var y = new Boolean(false);   // y is an object
+if(y){
+       alert('test ===> '+ y.valueOf())
+     }
+</script>
+</body>
