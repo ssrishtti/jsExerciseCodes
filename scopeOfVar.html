@@ -1,0 +1,20 @@
+<html>
+<body>
+<h2>scope of var</h2>
+<h2>scope is var is not confined to a particular block</h2>
+<script>
+var y=5;
+{
+    
+    var  x = 10;
+    alert('sum of x and y is '+(x+y));
+}
+alert('value of x is '+x);
+alert('value of y is '+y);
+</script>
+<script>
+    alert('x='+x +' and y='+y);
+</script>
+
+</body>
+</html>

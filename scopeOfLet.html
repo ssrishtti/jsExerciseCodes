@@ -1,0 +1,22 @@
+<html>
+<body>
+<h2>scope of let</h2>
+<h2>scope is var is confined to a particular block</h2>
+<script>
+let y=5;
+{
+    let x = 10;
+    alert('sum of x and y is '+(x+y));
+    //alert('value of y is '+y);
+}
+alert('value of x is '+x);
+alert('value of y is '+y);
+</script>
+<script>
+    let z=6;
+    alert('value of z is '+z);
+    alert('x='+x +' and y='+y);
+</script>
+
+</body>
+</html>
