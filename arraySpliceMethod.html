@@ -1,0 +1,19 @@
+<html>
+<body>
+
+<h3>splice() adds and/or removes array elements.</h3>
+<h3>splice() overwrites the original array.</h3>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// At position 2, add 2 elements, remove 1: 
+fruits.splice(1, 2, "Lemon", "Kiwi");
+
+document.getElementById("demo").innerHTML = fruits;
+</script>
+
+</body>
+</html>
