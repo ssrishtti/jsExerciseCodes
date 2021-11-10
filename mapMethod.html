@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<h3>the array.map() method creates a new array from the results of calling a function fro eyery element in the array.</h3>
+<h3>map() creates a new array from calling a function for every array element.</h3>
+<h3>map() calls a function once for each element in an array.</h3>
+<h3>map() does not execute the function for empty elements.</h3>
+<h3>map() does not change the original array.</h3>    
+ 
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+    const num=[23, 44, 98, 73];
+    const newNum= num.map(sqFunction);
+
+    document.getElementById("demo").innerHTML=newNum;
+
+    function sqFunction(n){
+    return n * 10;
+    }
+
+    const tab=[4, 9, 16, 25];
+    const newTab= tab.map(Math.sqrt);
+    
+    document.getElementById("demo1").innerHTML= newTab;
+
+</script>
+
+</body>
+</html>

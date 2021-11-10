@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<h3>findIndex() executes a function for each array element:</h3>
+<h3>findIndex() returns the index (position) of the first element that passes a test.</h3>
+<h3>findIndex() returns -1 if no match is found.</h3>
+<h3>findIndex() does not execute the function for empty array elements.</h3>
+<h3>findIndex() does not change the original array.</h3>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+    const ages=[5,17,22,28,31];
+
+    function checkAge(n){
+    return n%2==0;
+    }
+
+    document.getElementById("demo").innerHTML= ages.findIndex(checkAge);
+
+</script>
+
+</body>
+</html>

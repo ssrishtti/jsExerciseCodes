@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<h3>find() returns the value of the first element that passes a test.</h3>
+<h3>find() executes a function for each array element.</h3>
+<h3>find() retuns undefined if no element is found.</h3>
+<h3>find() does not execute the function for empty array elements.</h3>
+<h3>find() does not change the original array.</h3>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+    const ages=[5,17,21,28,31];
+
+    function checkAge(n){
+    return n%2==0;
+    }
+
+    document.getElementById("demo").innerHTML= ages.find(checkAge);
+
+</script>
+
+</body>
+</html>
