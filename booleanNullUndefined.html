@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Everything With a "Value" is True</h2>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"100 is " + Boolean(100) + "<br>" +
+"3.14 is " + Boolean(3.14) + "<br>" +
+"-15 is " + Boolean(-15) + "<br>" +
+"Any (not empty) string is " + Boolean("Hello") + "<br>" +
+"Even the string 'false' is " + Boolean('false') + "<br>" +
+"Any expression (except zero) is " + Boolean(1 + 7 + 3.14);
+</script>
+
+<h2>Everything Without a "Value" is False</h2>
+<p id="demo1"></p>
+
+<script>
+let x;
+document.getElementById("demo1").innerHTML =
+"0 is " + Boolean(0)+"<br>"+
+"-0 is " + Boolean(-0)+ "<br>"+
+"null is " + Boolean(null)+ "<br>"+
+"x is " + Boolean(x) + "<br>"+
+"false is " + Boolean(false) + "<br>"+
+"NaN is " + Boolean(NaN)+ "<br>"+
+"empty string is " + Boolean("");
+</script>
+
+</body>
+</html>
